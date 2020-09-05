@@ -26,7 +26,7 @@ html {
 
 body {
 	background-color:white;
-	background-image: linear-gradient(to top, rgba(77, 77, 77, 0.521), rgba(77, 77, 77, 0.521)), url("../../images/new-zealand-road.jpg");
+	background-image: linear-gradient(to top, rgba(77, 77, 77, 0.521), rgba(77, 77, 77, 0.521)), url("../../images/MountainRoad.jpg");
 	background-repeat: repeat, no-repeat;
 	background-size: auto, cover;
 	background-position: top left, center 0;
