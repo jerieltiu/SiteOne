@@ -1,0 +1,42 @@
+/* Admin Navbar Design */
+#admin_navbar {
+    display: flex;
+    position: relative;
+}
+
+.admin_sidebar {
+    position: fixed;
+    width: 250px;
+    height: 100%;
+    background: #132863;
+    padding: 30px 0;
+}
+
+.admin_sidebar p {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 30px;
+}
+
+.admin_sidebar ul li {
+    padding: 15px;
+    border-bottom: 1px solid #203c88;
+    border-top: 1px solid #132863;
+}
+
+.admin_sidebar ul li a {
+    color: #bdb8d7;
+    display: block;
+}
+
+.admin_sidebar ul li a .fa {
+    width: 35px;
+}
+
+.admin_sidebar ul li:hover {
+    background: #3f5f99;
+}
+
+.admin_sidebar ul li:hover a {
+    color: #fff;
+}

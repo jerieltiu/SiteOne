@@ -1,0 +1,156 @@
+/* Individual College Design */
+.individual_college {
+    min-height: 100vh;
+    padding: 80px 50px 30px;
+    background: #00041d;
+}
+
+.individual_college > a {
+    border-radius: 50%;
+    border: 1px solid #fff;
+    padding: 8px 12px 12px;
+    font-size: 30px;
+    transition: all 0.4s ease;
+}
+
+.individual_college > a:hover {
+    color: #fd9e00;
+    border: 1px solid #fd9e00;
+}
+
+.individual_college div {
+    max-width: 800px;
+    min-height: 100vh;
+    text-align: center;
+    margin: 0px auto;
+    padding: 10px;
+}
+
+.individual_college div p:first-of-type {
+    font-size: 40px;
+    margin: 0;
+}
+
+.individual_college div p:nth-of-type(2) {
+    font-size: 25px;
+    color: #c0c0c0;
+    margin: 10px auto;
+}
+
+.individual_college div img {
+    width: 95%;
+    height: 400px;
+    object-fit: cover;
+    display: block;
+    margin: 30px auto 40px;
+}
+
+.individual_college div a {
+    padding: 15px 25px;
+    border-radius: 30px;
+    background: #fd9e00;
+    font-size: 20px;
+    transition: all 0.4s ease;
+}
+
+.individual_college div a:hover {
+    background: #cf8000;
+}
+
+.individual_college div p:nth-of-type(3),
+.individual_college div p:nth-of-type(5) {
+    margin: 80px 0px 30px;
+    font-size: 35px;
+    text-align: left;
+}
+
+.individual_college div p:nth-of-type(4) {
+    text-align: left;
+    font-size: 18px;
+}
+
+.individual_college div ul {
+    margin-left: 30px;
+}
+
+.individual_college div ul li {
+    margin: 0px 10px 15px;
+    padding: 0;
+    list-style: circle;
+    text-align: left;
+    font-size: 18px;
+}
+
+@media(max-width: 700px) {
+    .individual_college {
+        padding: 80px 20px 30px;
+    }
+
+    .individual_college div {
+        margin: 15px auto;
+    }
+
+    .individual_college div img {
+        height: 350px;
+        width: 100%;
+    }
+}
+
+@media(max-width: 550px) {
+    .individual_college > a {
+        font-size: 27px;
+    }
+
+    .individual_college div p:first-of-type {
+        font-size: 35px;
+        margin-top: 20px;
+    }
+    
+    .individual_college div p:nth-of-type(2) {
+        font-size: 20px;
+    }
+
+    .individual_college div img {
+        height: 300px;
+    }
+
+    .individual_college div a {
+        font-size: 18px;
+    }
+
+    .individual_college div p:nth-of-type(3),
+    .individual_college div p:nth-of-type(5) {
+        font-size: 30px;
+    }
+
+    .individual_college div p:nth-of-type(4) {
+        font-size: 15px;
+    }
+
+    .individual_college div ul li {
+        font-size: 15px;
+    }
+}
+
+@media(max-width: 390px) {
+    .individual_college div p:first-of-type {
+        font-size: 33px;
+    }
+
+    .individual_college div a {
+        font-size: 15px;
+    }
+    
+    .individual_college div p:nth-of-type(2) {
+        font-size: 18px;
+    }
+
+    .individual_college div img {
+        height: 250px;
+    }
+
+    .individual_college div p:nth-of-type(3),
+    .individual_college div p:nth-of-type(5) {
+        font-size: 28px;
+    }
+}

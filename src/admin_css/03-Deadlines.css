@@ -1,0 +1,28 @@
+/* Admin Deadlines Design */
+#deadlines_admin {
+    min-height: 100vh;
+    background: #dee0e2;
+    text-align: center;
+    padding: 10px 20px;
+}
+
+#deadlines_admin > p {
+    font-size: 40px;
+    color: #6b6b6b;
+    margin: 20px auto 80px 250px;
+}
+
+#deadlines_admin > button {
+    border-radius: 45px;
+    padding: 15px 25px;
+    font-size: 20px;
+    margin-left: 250px;
+    background: #ff6600;
+    color: #fff;
+    transition: all 0.4s ease;
+    border: none;
+}
+
+#deadlines_admin > button:hover {
+    background: #dd5a03;
+}

@@ -1,0 +1,223 @@
+/* Navigation Bar Design */
+header {
+	background: transparent;
+  	top: 0;
+  	text-align: center;
+  	width: 100%;
+  	min-height: 80px;
+  	position: absolute;
+	z-index: 10;
+}
+
+/* Optimized Navigation Bar Design for Desktop */
+.mobileNavbar { display: none; }
+
+.desktopNavbar ul {
+	display: flex;
+	text-align: center;
+	margin: auto;
+	justify-content: center;
+}
+
+.desktopNavbar ul > div {
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+	height: 5px;
+	width: 430px;
+	margin-top: 35px;
+	display: flex;
+}
+
+.desktopNavbar ul li { 
+	margin: 15px 10px 0px;
+}
+
+.desktopNavbar ul li img {
+	width: 60px;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.desktopNavbar ul li a {
+	position: relative;
+	display: block;
+	padding: 0px 10px 10px;
+	margin: 15px 0px;
+	text-decoration: none;
+	transition: .5s;
+	z-index: 2;
+	width: 100px;
+}
+
+.desktopNavbar ul li:hover a {
+	color: #ffab24;
+}
+
+.desktopNavbar ul li a:hover:before {
+	transform: scaleY(0.95);
+	opacity: 1;
+}
+
+.desktopNavbar ul li a:hover:after { 
+	transform: scaleY(1); 
+}
+
+.desktopNavbar ul li a:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border-bottom: 1px solid #d3e7ff;
+	transform: scaleY(2);
+	opacity: 0;
+	transition: .5s;
+}
+
+/* Optimized Navigation Bar Design for Tablets and Phones */
+@media(max-width: 850px) {
+	.desktopNavbar { display: none; }
+	.mobileNavbar { display: block; }
+
+	.mobileMenuContainer {
+		position: fixed;
+		top: 15px;
+		right: 70px;
+		z-index: 1;
+	}
+
+	.mobileMenuToggler {
+		position: absolute;
+		top: 0;
+		z-index: 2;
+		cursor: pointer;
+		width: 50px;
+		height: 50px;
+		opacity: 0;
+	}
+
+	.hamburger {
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 1;
+		width: 60px;
+		height: 50px;
+		padding: 0;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.hamburger > div {
+		position: relative;
+		width: 50%;
+		height: 2px;
+		background-color: #fff;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		transition: all 0.4s ease;
+	}
+
+	.hamburger > div:before,
+	.hamburger > div:after {
+		content: '';
+		position: absolute;
+		z-index: 1;
+		top: -10px;
+		width: 100%;
+		height: 2px;
+		background: inherit;
+	}
+
+	.hamburger > div:after {
+		top: 10px;
+    }
+
+	.mobileMenuToggler:checked + .hamburger > div {
+        transform: rotate(135deg);
+	}
+
+	.mobileMenuToggler:checked + .hamburger > div:before,
+	.mobileMenuToggler:checked + .hamburger > div:after {
+		top: 0;
+		transform: rotate(90deg);
+	}
+
+	.mobileMenuToggler:checked:hover + .hamburger > div {
+		transform: rotate(225deg);
+    }
+
+	.mobileMenuToggler:checked ~ .mobileMenu {
+		visibility: visible;
+	}
+
+	.mobileMenuToggler:checked ~ .mobileMenu > div {
+		transform: scale(1);
+		transition-duration: 0.75s;
+	}
+
+	.mobileMenuToggler:checked ~ .mobileMenu > div > div {
+		opacity: 1;
+		transition: opacity 0.4s ease;
+	}
+
+	.mobileMenu {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		visibility: hidden;
+		overflow: hidden;
+		display: flex;
+	}
+
+	.mobileMenu > div {
+		background: rgba(0, 0, 0, 0.93);
+		width: 100%;
+		height: 100%;
+		display: flex;
+		flex: none;
+		transform-origin: top right;
+        transform: scale(0);
+		transition: all 0.4s ease;
+	}
+
+	.mobileMenu > div > div {
+		text-align: center;
+		max-height: 100vh;
+		transition: opacity 0.4s ease;
+	}
+
+	.mobileNavbar ul {
+		margin: 0;
+		padding: 0;
+		margin: 150px 30px;
+	}
+
+	.mobileNavbar ul li {
+		list-style: none;
+		margin: 50px 0px 0px;
+	}
+
+	.mobileNavbar ul li a {
+		position: relative;
+		display: block;
+		padding: 0px 10px 10px;
+		margin: 10px 0;
+		text-decoration: none;
+		transition: .5s;
+		z-index: 2;
+		font-size: 25px;
+		justify-content: left;
+		text-align: left;
+		border-bottom: 1px solid #d3e7ff;
+	}
+
+	.mobileNavbar ul li a:hover {
+		color: #fd9e00;
+	}
+}
